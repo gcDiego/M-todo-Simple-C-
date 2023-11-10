@@ -51,6 +51,7 @@ class Program
             g.GaussJ(columPivote, sistemaEc, matriz);
             finalizado = e.Solucion(filas, clmnSol, restriccion, sistemaEc);
         }
+        e.MostrarSolucion(desicion, sistemaEc, matriz);
         Console.ReadKey();
     }
 }
