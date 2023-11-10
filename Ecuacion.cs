@@ -140,5 +140,19 @@
             }
             return finalizado;
         }
+
+        public void MostrarSolucion(int d, float[,]ec, string[,]mat)
+        {
+            for(int i = 0; i < ec.GetLength(0); i++)
+            {
+                for(int j = 0; j <= d + 1; j++)
+                {
+                    if (ec[i, j] == 1)
+                    {
+                        Console.WriteLine($"La solución de {mat[i,0]} es: {ec[i, ec.GetLength(1)-1]}");
+                    }
+                }
+            }
+        }
     }
 }
